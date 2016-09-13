@@ -7,8 +7,12 @@ fieldset {
 .basic-info,
 .abilities,
 .application {
-  width: 25%;
+  width: 28%;
   float: left;
+}
+
+select > option[value=""] {
+  display: none;
 }
 
 #levitation-num {
@@ -16,7 +20,7 @@ fieldset {
 }
 
 form {
-  margin: 3% 10%;
+  margin: 3% 6%;
 }
 
 h1 {
@@ -27,6 +31,7 @@ h1 {
 input,
 select {
   margin: 5% 3%;
+  padding-bottom: 2%;
 }
 
 input:focus {
