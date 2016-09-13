@@ -11,15 +11,41 @@ fieldset {
   float: left;
 }
 
+#levitation-num {
+  width: 15%;
+}
+
+form {
+  margin: 3% 10%;
+}
+
+h1 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 input,
 select {
   margin: 5% 3%;
 }
 
+input:focus {
+  border-color: red;
+}
+
+input:invalid {
+  background-color: lightpink;
+}
+
+.large-text-box {
+  width: 90%;
+  height: 15%;
+}
+
 /* Buttons */
 button {
   background-color: lightblue;
-  border-radius: 15%;
+  border-radius: 12%;
   padding: 2%;
   margin-top: 4%;
 }
