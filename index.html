@@ -5,26 +5,28 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <form action="" method="post">
+    <form action="http://requestb.in/w1ojn0w1" method="post">
 
     <!--BASIC INFO BOX -->
-    <fieldset>
+    <fieldset class="basic-info">
       <legend>Basic Info</legend>
       <label for="applicant-name">Full Name</label>
-      <input id="applicant-name" type="text" placeholder="Luke Skywalker" required>
+      <input id="applicant-name" type="text" placeholder="Luke Skywalker" required><br>
       <label for="profile-pic">Profile Pic</label>
-      <input id="profile-pic" type="file">
+      <input id="profile-pic" type="file"><br>
+      <label for"email-address">Email</label>
+      <input id="email-address" type="text" required><br>
 
       <label for="side" type="radio">Side:</label>
         <input type="radio" name="side" value="light">Light</input>
-        <input type="radio" name="side" value="dark">Dark</input>
+        <input type="radio" name="side" value="dark">Dark</input><br>
 
       <label for="origin-story">Origin Story</label>
-        <input id="origin-story" type="text">
+        <input id="origin-story" type="text"><br>
     </fieldset>
 
     <!-- ABILITIES BOX -->
-    <fieldset>
+    <fieldset class="abilities">
       <legend>Abilities</legend>
       <label for="lightsaber-color">Lightsaber Color</label>
       <select id="lightsaber-color" placeholder="Select Color">
@@ -33,15 +35,15 @@
         <option>Red<option>
         <option>Green<option>
         <option>Purple<option>
-      </select>
+      </select><br>
 
         <label for="levitation-num">How many objects can you levitate at once?</label>
-        <input id="levitation-num" type="number" min="1">
+        <input id="levitation-num" type="number" min="0"><br>
 
         <label for"fav-ability">Favorite Ability</label>
-        <input id="fav-ability" type="text" placeholder="precognition">
+        <input id="fav-ability" type="text" placeholder="precognition"><br>
 
-        <label for="pilot-experience">Pilot Experience</label>
+        <label for="pilot-experience">Pilot Experience</label><br>
         <input name="option1" value="speeder" type="checkbox">Speeder
         <input name="option2" value="transport" type="checkbox">Transport
         <input name="option3" value="x-wing" type="checkbox">X-wing
@@ -53,23 +55,27 @@
     </fieldset>
 
     <!-- APPLICATION INFO BOX -->
-    <fieldset>
+    <fieldset class="application">
       <legend>Application Info</legend>
       <label for="desired-mentor">Desired Mentor</label>
-      <input id="desired-mentor" type="text" placeholder="Yoda">
+      <input id="desired-mentor" type="text" placeholder="Yoda"><br>
 
       <label for"app-date">Application Date</label>
-      <input id="app-date" type="date">
+      <input id="app-date" type="date"><br>
 
       <label for="app-password">Application Password</label>
-      <input id="app-password" type="password">
+      <input id="app-password" type="password"><br>
 
       <label for="dark-side-question">How do you get to the dark side?</label>
+      <input for="dark-side-question" type="text"><br>
 
+      <div class="buttons">
+      <button type="reset" value="Reset">Start Over</button>
+      <button type="submit" value="Apply">Apply</button>
+    </div>
 
     </fieldset>
-    <button type="reset" value="Reset">Reset</button>
-    <button type="submit" value="Apply">Apply</button>
+
   </form>
 
 

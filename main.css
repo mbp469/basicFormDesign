@@ -1,0 +1,30 @@
+
+/* Layout */
+fieldset {
+  display: inline-block;
+}
+
+.basic-info,
+.abilities,
+.application {
+  width: 25%;
+  float: left;
+}
+
+input,
+select {
+  margin: 5% 3%;
+}
+
+/* Buttons */
+button {
+  background-color: lightblue;
+  border-radius: 15%;
+  padding: 2%;
+  margin-top: 4%;
+}
+
+/* Text Decoration */
+label {
+  font-weight: bold;
+}
