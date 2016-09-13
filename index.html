@@ -1,27 +1,76 @@
 <!doctype>
 <html>
-  <head></head>
+  <head>
+    <title>Force Sign Up</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
   <body>
+    <form action="" method="post">
+
     <!--BASIC INFO BOX -->
     <fieldset>
+      <legend>Basic Info</legend>
+      <label for="applicant-name">Full Name</label>
+      <input id="applicant-name" type="text" placeholder="Luke Skywalker" required>
+      <label for="profile-pic">Profile Pic</label>
+      <input id="profile-pic" type="file">
 
+      <label for="side" type="radio">Side:</label>
+        <input type="radio" name="side" value="light">Light</input>
+        <input type="radio" name="side" value="dark">Dark</input>
 
-
+      <label for="origin-story">Origin Story</label>
+        <input id="origin-story" type="text">
     </fieldset>
-    
+
     <!-- ABILITIES BOX -->
     <fieldset>
+      <legend>Abilities</legend>
+      <label for="lightsaber-color">Lightsaber Color</label>
+      <select id="lightsaber-color" placeholder="Select Color">
+        <option>Select Color<option>
+        <option>Blue<option>
+        <option>Red<option>
+        <option>Green<option>
+        <option>Purple<option>
+      </select>
 
+        <label for="levitation-num">How many objects can you levitate at once?</label>
+        <input id="levitation-num" type="number" min="1">
+
+        <label for"fav-ability">Favorite Ability</label>
+        <input id="fav-ability" type="text" placeholder="precognition">
+
+        <label for="pilot-experience">Pilot Experience</label>
+        <input name="option1" value="speeder" type="checkbox">Speeder
+        <input name="option2" value="transport" type="checkbox">Transport
+        <input name="option3" value="x-wing" type="checkbox">X-wing
+        <input name="option4" value="tie-fighter" type="checkbox">TIE Fighter
+        <input name="option5" value="starship" type="checkbox">Starship
+        <input name="option6" value="Bantha" type="checkbox">Bantha
 
 
     </fieldset>
 
     <!-- APPLICATION INFO BOX -->
     <fieldset>
+      <legend>Application Info</legend>
+      <label for="desired-mentor">Desired Mentor</label>
+      <input id="desired-mentor" type="text" placeholder="Yoda">
 
+      <label for"app-date">Application Date</label>
+      <input id="app-date" type="date">
+
+      <label for="app-password">Application Password</label>
+      <input id="app-password" type="password">
+
+      <label for="dark-side-question">How do you get to the dark side?</label>
 
 
     </fieldset>
+    <button type="reset" value="Reset">Reset</button>
+    <button type="submit" value="Apply">Apply</button>
+  </form>
 
 
 
