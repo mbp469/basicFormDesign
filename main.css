@@ -11,9 +11,7 @@ fieldset {
   float: left;
 }
 
-select > option[value=""] {
-  display: none;
-}
+
 
 #levitation-num {
   width: 15%;
